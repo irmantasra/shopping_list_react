@@ -1,0 +1,29 @@
+{
+  "name": "shoppinglist",
+  "version": "1.0.0",
+  "description": "Shopping list app",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "package-mac": "electron-packager . --overwrite --asar=true --platform=darwin --arch=x64 --prune=true --out=release-builds",
+    "package-win": "electron-packager . --overwrite --asar=true --platform=win32 --arch=ia32 --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"Shoping list\"",
+    "package-linux": "electron-packager . electron-tutorial-app --overwrite --asar=true --platform=linux --arch=x64 --prune=true --out=release-builds"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/irmantasra/shopping_list_react.git"
+  },
+  "author": "Irmantas Ramanauskas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/irmantasra/shopping_list_react/issues"
+  },
+  "homepage": "https://github.com/irmantasra/shopping_list_react#readme",
+  "dependencies": {
+    "electron": "^1.8.3"
+  },
+  "devDependencies": {
+    "electron-package": "^0.1.0",
+    "electron-packager": "^11.1.0"
+  }
+}
